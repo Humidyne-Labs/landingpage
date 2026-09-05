@@ -1,8 +1,0 @@
-{
-  "name": "HUMID1_OS",
-  "description": "Ultra-low-power, cloud-integrated IoT hydrometer operating stack for ESP32-S3-ePaper-1.54 and ThingsBoard precision humidor monitoring.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
