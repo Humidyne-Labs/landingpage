@@ -11,15 +11,15 @@ export const INO_FIRMWARE: FirmwareFile = {
   name: 'HUMID1_OS.ino',
   language: 'cpp',
   path: 'Source_Code/arduino/HUMID1_OS/HUMID1_OS.ino',
-  githubUrl: 'https://github.com/Humiditron/HUMID1_OS/blob/main/Source_Code/arduino/HUMID1_OS/HUMID1_OS.ino',
+  githubUrl: 'https://github.com/Humidyne-Labs/HUMID1_OS/blob/main/Source_Code/arduino/HUMID1_OS/HUMID1_OS.ino',
   description: 'Production Arduino sketch for ESP32-S3-ePaper-1.54',
   content: `/*
  * HUMID1-OS :: Ultra-Low-Power IoT Humidor Hydrometer Firmware
  * Target: Waveshare ESP32-S3-ePaper-1.54 (Off-the-shelf kit)
  * SoC: ESP32-S3-PICO-1-N8R8 | Sensor: Sensirion SHTC3 (I2C) | Display: 1.54" e-Paper
  * Cloud: ThingsBoard IoT Telemetry & Attributes
- * Repository: https://github.com/Humiditron/HUMID1_OS
- * License: MIT (C) 2026 Humiditron
+ * Repository: https://github.com/Humidyne-Labs/HUMID1_OS
+ * License: MIT (C) 2026 Humidyne-Labs
  */
 
 void setup() {

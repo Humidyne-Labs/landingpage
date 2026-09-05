@@ -38,7 +38,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           <div className="hidden md:flex items-center ml-4">
             <a
               id="nav-github-link"
-              href="https://github.com/Humiditron/HUMID1_OS"
+              href="https://github.com/Humidyne-Labs/HUMID1_OS"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs uppercase font-mono tracking-wider opacity-70 hover:opacity-100 px-2 py-1 transition-all"
@@ -67,7 +67,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           {/* Primary Button of Importance (White in Dark Mode, Black in Light Mode) */}
           <a
             id="nav-access-btn"
-            href="https://app.humid1.com"
+            href="https://dash.humid1.com"
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center justify-center shrink-0 text-xs uppercase font-mono font-bold px-2.5 sm:px-4 py-1.5 border transition-all ${

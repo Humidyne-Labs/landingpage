@@ -17,9 +17,9 @@ import {
 import { INO_FIRMWARE, HARDWARE_SPECS } from '../data/firmwareCode';
 
 const GITHUB_RAW_CANDIDATE_URLS = [
-  'https://raw.githubusercontent.com/Humiditron/HUMID1_OS/main/Source_Code/arduino/HUMID1_OS/HUMID1_OS.ino',
-  'https://raw.githubusercontent.com/Humiditron/HUMID1_OS/main/HUMID1_OS.ino',
-  'https://raw.githubusercontent.com/Humiditron/HUMID1_OS/master/Source_Code/arduino/HUMID1_OS/HUMID1_OS.ino'
+  'https://raw.githubusercontent.com/Humidyne-Labs/HUMID1_OS/main/Source_Code/arduino/HUMID1_OS/HUMID1_OS.ino',
+  'https://raw.githubusercontent.com/Humidyne-Labs/HUMID1_OS/main/HUMID1_OS.ino',
+  'https://raw.githubusercontent.com/Humidyne-Labs/HUMID1_OS/master/Source_Code/arduino/HUMID1_OS/HUMID1_OS.ino'
 ];
 
 interface HomeViewProps {
@@ -103,7 +103,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ theme }) => {
           {/* Main button of importance (White in dark mode, Black in light mode) */}
           <a
             id="hero-launch-app-btn"
-            href="https://app.humid1.com"
+            href="https://dash.humid1.com"
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center gap-2 text-xs uppercase font-bold px-5 py-2.5 border transition-all ${
@@ -112,7 +112,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ theme }) => {
                 : 'bg-black text-white border-black hover:bg-zinc-800'
             }`}
           >
-            <span>THINGSBOARD DASHBOARD</span>
+            <span>DASHBOARD</span>
             <ArrowUpRight className="w-4 h-4" />
           </a>
 
@@ -133,7 +133,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ theme }) => {
 
           <a
             id="hero-github-btn"
-            href="https://github.com/Humiditron/HUMID1_OS"
+            href="https://github.com/Humidyne-Labs/HUMID1_OS"
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center gap-2 text-xs uppercase font-bold px-5 py-2.5 border transition-all ${
@@ -392,7 +392,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ theme }) => {
           {/* App Dashboard */}
           <a
             id="service-card-app"
-            href="https://app.humid1.com"
+            href="https://dash.humid1.com"
             target="_blank"
             rel="noopener noreferrer"
             className={`p-4 border transition-all flex flex-col justify-between group ${
@@ -406,7 +406,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ theme }) => {
                 <span className="text-[10px] uppercase font-bold text-zinc-500">DASHBOARD</span>
                 <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
               </div>
-              <div className="text-sm font-bold uppercase mb-1">app.humid1.com</div>
+              <div className="text-sm font-bold uppercase mb-1">dash.humid1.com</div>
               <p className="text-[11px] text-zinc-600 dark:text-zinc-400">
                 ThingsBoard time-series analytics and humidor telemetry.
               </p>
@@ -476,7 +476,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ theme }) => {
           {/* GitHub Repository */}
           <a
             id="service-card-github"
-            href="https://github.com/Humiditron/HUMID1_OS"
+            href="https://github.com/Humidyne-Labs/HUMID1_OS"
             target="_blank"
             rel="noopener noreferrer"
             className={`p-4 border transition-all flex flex-col justify-between group ${

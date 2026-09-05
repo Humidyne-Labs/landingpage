@@ -32,12 +32,12 @@ export const Footer: React.FC<FooterProps> = ({ theme }) => {
         <div className="flex flex-wrap justify-center gap-x-5 sm:gap-x-7 gap-y-2.5 text-xs font-mono font-medium">
           <a
             id="footer-access-link"
-            href="https://app.humid1.com"
+            href="https://dash.humid1.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white hover:underline transition-colors"
           >
-            ThingsBoard App
+            Dashboard
           </a>
 
           <a
@@ -76,7 +76,7 @@ export const Footer: React.FC<FooterProps> = ({ theme }) => {
 
           <a
             id="footer-github-link"
-            href="https://github.com/Humiditron/HUMID1_OS"
+            href="https://github.com/Humidyne-Labs/HUMID1_OS"
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white hover:underline transition-colors"
@@ -87,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({ theme }) => {
 
         {/* Copyright */}
         <div className="font-mono text-[11px] text-zinc-500 dark:text-zinc-400 text-center lg:text-right">
-          © 2026 Humiditron. Open Source Hardware.
+          © 2026 Humidyne-Labs. Open Source Hardware.
         </div>
 
       </div>
