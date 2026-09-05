@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#09090b" stroke="#27272a" stroke-width="1"/>
+  <!-- Hydrometer / Precision Moisture Droplet -->
+  <path d="M16 5.5C16 5.5 8 15 8 20.5C8 24.918 11.582 28.5 16 28.5C20.418 28.5 24 24.918 24 20.5C24 15 16 5.5 16 5.5Z" fill="#38bdf8"/>
+  <path d="M16 9C16 9 10.5 16.5 10.5 20.5C10.5 23.538 12.962 26 16 26C19.038 26 21.5 23.538 21.5 20.5C21.5 16.5 16 9 16 9Z" fill="#0284c7" opacity="0.6"/>
+  <!-- Highlight reflection -->
+  <ellipse cx="13" cy="18" rx="2" ry="3.5" transform="rotate(-25 13 18)" fill="#ffffff" opacity="0.85"/>
+</svg>
