@@ -6,7 +6,17 @@ import { Footer } from './components/Footer';
 export default function App() {
   // Theme state
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-    return (localStorage.getItem('humid1_theme') as 'dark' | 'light') || 'light';
+    const saved = localStorage.getItem('humid1_theme') as 'dark' | 'light' | null;
+    if (saved === 'dark' || saved === 'light') return saved;
+
+    // Check system preference
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      if (prefersDark) return 'dark';
+      if (prefersLight) return 'light';
+    }
+    return 'dark'; // Default to dark mode
   });
 
   // Sync theme with document element and storage
@@ -19,11 +29,30 @@ export default function App() {
       root.classList.add('light');
       root.classList.remove('dark');
     }
-    localStorage.setItem('humid1_theme', theme);
   }, [theme]);
 
+  // Dynamically follow host system changes if no explicit user preference is saved
+  useEffect(() => {
+    const saved = localStorage.getItem('humid1_theme');
+    if (saved) return;
+
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setTheme((prev) => {
+      const nextTheme = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('humid1_theme', nextTheme);
+      return nextTheme;
+    });
   };
 
   const handleNavigateHome = () => {
