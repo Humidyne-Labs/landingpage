@@ -2,7 +2,9 @@
 
 `HUMID1_OS` is an ultra-low-power, cloud-integrated operating stack engineered for precision tobacco and cigar humidor climate monitoring. Powered by the off-the-shelf **ESP32-S3-ePaper-1.54** development kit, this system provides real-time ambient telemetry with minimal power consumption.
 
-[![Donate to Humid1](https://custom-icon-badges.demolab.com/badge/Donate-Humid1.com-4A154B?style=plastic&logo=signupgenius&logoColor=white)](https://tools.signupgenius.com/c/support-humid1-project)
+[![Donate to Humid1](https://custom-icon-badges.demolab.com/badge/Donate-Humid1.com-4A154B?style=plastic&logo=signupgenius&logoColor=white)](https://tools.signupgenius.com/c/support-humid1-project)  
+
+### 🎞️ [Screen Captures](/SNAPSHOTS.md)
 
 ## 🌌 Platform Overview
 
