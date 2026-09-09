@@ -110,4 +110,4 @@ A production-grade CI/CD pipeline is configured in `.github/workflows/build-dist
 [![none](https://wsrv.nl/?url=github.com/Humiditron.png&w=32&h=32&fit=cover&mask=circle&filt=greyscale "Humiditron's Profile")](https://github.com/Humiditron/)
 [![none](https://wsrv.nl/?url=github.com/google-gemini.png&w=32&h=32&fit=cover&mask=circle&filt=greyscale "Gemini's Profile")](https://github.com/google-gemini/)
 
-© 2026 **Humidyne-Labs**. Open Source Hardware & Software.
+© 2026 **Humidyne-Labs**
