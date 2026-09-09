@@ -2,8 +2,6 @@
 
 `HUMID1_OS` is an ultra-low-power, cloud-integrated operating stack engineered for precision tobacco and cigar humidor climate monitoring. Powered by the off-the-shelf **ESP32-S3-ePaper-1.54** development kit, this system provides real-time ambient telemetry with minimal power consumption.
 
----
-
 [![Donate to Humid1](https://custom-icon-badges.demolab.com/badge/Donate-Humid1.com-4A154B?style=plastic&logo=signupgenius&logoColor=white)](https://tools.signupgenius.com/c/support-humid1-project)
 
 ## 🌌 Platform Overview
@@ -103,16 +101,13 @@ A production-grade CI/CD pipeline is configured in `.github/workflows/build-dist
 *   Static asset building and type-safety verification.
 *   Automated packaging into a distributable release ZIP (`dist.zip`).
 *   Automated creation of GitHub Releases when tags matching `v*` are pushed.
-*   Building and publishing multi-platform Docker images directly to **GitHub Container Registry (GHCR)** at `ghcr.io/Humidyne-Labs/humid1-website`.
+*   Building and publishing multi-platform Docker images directly to **GitHub Container Registry (GHCR)** at `ghcr.io/Humidyne-Labs/landingpage`.
 
 ---
 
 ## 👥 Contributors
 
-This open-source project is maintained and supported by:
-*   **humiditron** — Core hardware designs and foundational operating logic.
-*   **Google AI Coding Agent** — Full-stack system integration, dashboard domain migrations, responsive UI architecture, and automated container deployment pipelines.
-
----
+[![none](https://wsrv.nl/?url=github.com/Humiditron.png&w=32&h=32&fit=cover&mask=circle&filt=greyscale "Humiditron's Profile")](https://github.com/Humiditron/)
+[![none](https://wsrv.nl/?url=github.com/google-gemini.png&w=32&h=32&fit=cover&mask=circle&filt=greyscale "Gemini's Profile")](https://github.com/google-gemini/)
 
 © 2026 **Humidyne-Labs**. Open Source Hardware & Software.
