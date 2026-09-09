@@ -14,7 +14,7 @@ This landing page serves as the global hub for the `HUMID1_OS` maker platform ec
 *   **Production Dashboard:** [dash.humid1.com](https://dash.humid1.com)
 *   **SSO & Device Enrollment:** [auth.humid1.com](https://auth.humid1.com/if/flow/default-enrollment-flow/)
 *   **Maker Support Community:** [chat.humid1.com](https://chat.humid1.com)
-*   **Firmware Repository:** [github.com/Humidyne-Labs/HUMID1_OS](https://github.com/Humidyne-Labs/humid1_os)
+*   **Firmware Repository:** [github.com/Humidyne-Labs/humid1-os](https://github.com/Humidyne-Labs/humid1-os)
 
 ---
 
