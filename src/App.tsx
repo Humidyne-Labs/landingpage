@@ -6,8 +6,11 @@ import { Footer } from './components/Footer';
 export default function App() {
   // Theme state
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-    const saved = localStorage.getItem('humid1_theme') as 'dark' | 'light' | null;
-    if (saved === 'dark' || saved === 'light') return saved;
+    const preference = localStorage.getItem('humid1_theme_preference');
+    if (preference === 'explicit') {
+      const saved = localStorage.getItem('humid1_theme') as 'dark' | 'light' | null;
+      if (saved === 'dark' || saved === 'light') return saved;
+    }
 
     // Check system preference
     if (typeof window !== 'undefined' && window.matchMedia) {
@@ -29,12 +32,14 @@ export default function App() {
       root.classList.add('light');
       root.classList.remove('dark');
     }
+    // Always keep active theme in sync for legal.html and other non-React templates to read
+    localStorage.setItem('humid1_theme', theme);
   }, [theme]);
 
   // Dynamically follow host system changes if no explicit user preference is saved
   useEffect(() => {
-    const saved = localStorage.getItem('humid1_theme');
-    if (saved) return;
+    const preference = localStorage.getItem('humid1_theme_preference');
+    if (preference === 'explicit') return;
 
     if (typeof window === 'undefined' || !window.matchMedia) return;
 
@@ -50,6 +55,7 @@ export default function App() {
   const toggleTheme = () => {
     setTheme((prev) => {
       const nextTheme = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('humid1_theme_preference', 'explicit');
       localStorage.setItem('humid1_theme', nextTheme);
       return nextTheme;
     });
